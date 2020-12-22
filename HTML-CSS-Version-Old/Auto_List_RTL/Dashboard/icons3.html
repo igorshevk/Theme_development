@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msapplication-TileColor" content="#162946">
+		<meta name="theme-color" content="#e67605">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+		<!-- Title -->
+		<title>Car Listing,Dealer,Rental Auto Classifieds Bootstrap Modern Responsive Clean HTML Template</title>
+
+		<!-- Sidemenu Css -->
+		<link href="../assets/plugins/sidemenu/sidemenu-rtl.css" rel="stylesheet" />
+
+		<!-- Bootstrap Css -->
+		<link href="../assets/plugins/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Dashboard Css -->
+		<link href="../assets/css/style-rtl.css" rel="stylesheet" />
+		<link href="../assets/css/admin-custom-rtl.css" rel="stylesheet" />
+
+		<!-- c3.js Charts Plugin -->
+		<link href="../assets/plugins/charts-c3/c3-chart.css" rel="stylesheet" />
+
+		<!-- Custom scroll bar css-->
+		<link href="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+		<!---Font icons-->
+		<link href="../assets/css/icons.css" rel="stylesheet"/>
+
+		<!-- Color-Skins -->
+		<link id="theme" rel="stylesheet" type="text/css" media="all" href="../assets/color-skins/color13.css" />
+
+	</head>
+	<body class="app sidebar-mini">
+
+		<!--Loader-->
+		<div id="global-loader">
+			<img src="../assets/images/loader.svg" class="loader-img " alt="">
+		</div>
+		<!--/Loader-->
+
+		<!--Page-->
+		<div class="page">
+			<div class="page-main">
+
+				<!--Header-->
+				<div class="app-header1 header py-1 d-flex">
+					<div class="container-fluid">
+						<div class="d-flex">
+							<a class="header-brand" href="index.html">
+								<img src="../assets/images/brand/logo.png" class="header-brand-img" alt="Claylist logo">
+							</a>
+							<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+							<div class="header-navicon">
+								<a href="#" data-toggle="search" class="nav-link d-lg-none navsearch-icon">
+									<i class="fa fa-search"></i>
+								</a>
+							</div>
+							<div class="header-navsearch">
+								<a href="#" class=" "></a>
+								<form class="form-inline mr-auto">
+									<div class="nav-search">
+										<input type="search" class="form-control header-search" placeholder="Search…" aria-label="Search" >
+										<button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+									</div>
+								</form>
+							</div>
+							<div class="d-flex order-lg-2 mr-auto">
+								<div class="dropdown d-none d-md-flex" >
+									<a  class="nav-link icon full-screen-link">
+										<i class="fe fe-maximize-2"  id="fullscreen-button"></i>
+									</a>
+								</div>
+								<div class="dropdown d-none d-md-flex country-selector">
+									<a href="#" class="d-flex nav-link leading-none" data-toggle="dropdown">
+										<img src="../assets/images/flags/us_flag.jpg" alt="img" class="avatar avatar-xs ml-1 align-self-center">
+										<div>
+											<strong class="text-dark">English</strong>
+										</div>
+									</a>
+									<div class="language-width dropdown-menu dropdown-menu-left dropdown-menu-arrow">
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/french_flag.jpg"  alt="flag-img" class="avatar  ml-3 align-self-center" >
+											<div>
+												<strong>French</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/germany_flag.jpg"  alt="flag-img" class="avatar  ml-3 align-self-center" >
+											<div>
+												<strong>Germany</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/italy_flag.jpg"  alt="flag-img" class="avatar  ml-3 align-self-center" >
+											<div>
+												<strong>Italy</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/russia_flag.jpg"  alt="flag-img" class="avatar  ml-3 align-self-center" >
+											<div>
+												<strong>Russia</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/spain_flag.jpg"  alt="flag-img" class="avatar  ml-3 align-self-center" >
+											<div>
+												<strong>Spain</strong>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="dropdown d-none d-md-flex">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="fa fa-bell-o"></i>
+										<span class=" nav-unread badge badge-danger badge-pill">4</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow">
+										<a href="#" class="dropdown-item text-center">You have 4 notification</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg">
+												<i class="fa fa-envelope-o"></i>
+											</div>
+											<div>
+												<strong>2 new Messages</strong>
+												<div class="small text-muted">17:50 Pm</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg">
+												<i class="fa fa-calendar"></i>
+											</div>
+											<div>
+												<strong> 1 Event Soon</strong>
+												<div class="small text-muted">19-10-2019</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg">
+												<i class="fa fa-comment-o"></i>
+											</div>
+											<div>
+												<strong> 3 new Comments</strong>
+												<div class="small text-muted">05:34 Am</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg">
+												<i class="fa fa-exclamation-triangle"></i>
+											</div>
+											<div>
+												<strong> Application Error</strong>
+												<div class="small text-muted">13:45 Pm</div>
+											</div>
+										</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item text-center">See all Notification</a>
+									</div>
+								</div>
+								<div class="dropdown d-none d-md-flex">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="fa fa-envelope-o"></i>
+										<span class=" nav-unread badge badge-warning  badge-pill">3</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow">
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/users/male/41.jpg" alt="avatar-img" class="avatar brround ml-3 align-self-center">
+											<div>
+												<strong>Blake</strong> I've finished it! See you so.......
+												<div class="small text-muted">30 mins ago</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/users/female/1.jpg" alt="avatar-img" class="avatar brround ml-3 align-self-center">
+											<div>
+												<strong>Caroline</strong> Just see the my Admin....
+												<div class="small text-muted">12 mins ago</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/users/male/18.jpg" alt="avatar-img" class="avatar brround ml-3 align-self-center">
+											<div>
+												<strong>Jonathan</strong> Hi! I'am singer......
+												<div class="small text-muted">1 hour ago</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/users/female/18.jpg" alt="avatar-img" class="avatar brround ml-3 align-self-center">
+											<div>
+												<strong>Emily</strong> Just a reminder.....
+												<div class="small text-muted">45 mins ago</div>
+											</div>
+										</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item text-center">View all Messages</a>
+									</div>
+								</div>
+								<div class="dropdown d-none d-md-flex">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="fe fe-grid"></i>
+									</a>
+									<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow  app-selector">
+										<ul class="drop-icon-wrap">
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-speech text-dark"></i>
+													<span class="block"> E-mail</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-map text-dark"></i>
+													<span class="block">map</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-bubbles text-dark"></i>
+													<span class="block">Messages</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-user-follow text-dark"></i>
+													<span class="block">Followers</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-picture text-dark"></i>
+													<span class="block">Photos</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-settings text-dark"></i>
+													<span class="block">Settings</span>
+												</a>
+											</li>
+										</ul>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item text-center">View all</a>
+									</div>
+								</div>
+								<div class="dropdown ">
+									<a href="#" class="nav-link pr-0 leading-none user-img" data-toggle="dropdown">
+										<img src="../assets/images/users/male/25.jpg" alt="profile-img" class="avatar avatar-md brround">
+									</a>
+									<div class="dropdown-menu dropdown-menu-left dropdown-menu-arrow ">
+										<a class="dropdown-item" href="profile.html">
+											<i class="dropdown-icon icon icon-user"></i> My Profile
+										</a>
+										<a class="dropdown-item" href="emailservices.html">
+											<i class="dropdown-icon icon icon-speech"></i> Inbox
+										</a>
+										<a class="dropdown-item" href="editprofile.html">
+											<i class="dropdown-icon  icon icon-settings"></i> Account Settings
+										</a>
+										<a class="dropdown-item" href="login.html">
+											<i class="dropdown-icon icon icon-power"></i> Log out
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/Header-->
+
+				<!-- Sidebar menu-->
+				<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+				<aside class="app-sidebar doc-sidebar">
+					<div class="app-sidebar__user clearfix">
+						<div class="dropdown user-pro-body">
+							<div>
+								<img src="../assets/images/users/male/25.jpg" alt="user-img" class="avatar avatar-lg brround">
+								<a href="editprofile.html" class="profile-img">
+									<span class="fa fa-pencil" aria-hidden="true"></span>
+								</a>
+							</div>
+							<div class="user-info">
+								<h2>Rubin Carmody</h2>
+								<span>Web Designer</span>
+							</div>
+						</div>
+					</div>
+					<ul class="side-menu">
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-home"></i><span class="side-menu__label">Dashboard</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li><a class="slide-item" href="index.html">Dashboard 1</a></li>
+								<li><a class="slide-item" href="index2.html">Dashboard 2</a></li>
+								<li><a class="slide-item" href="index3.html">Dashboard 3</a></li>
+								<li><a class="slide-item" href="index4.html">Dashboard 4</a></li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-panel"></i><span class="side-menu__label">Admin settings</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li><a class="slide-item" href="admin-pricing.html">Admin Pricing</a></li>
+								<li><a class="slide-item" href="ads.html">Ads List</a></li>
+								<li><a class="slide-item" href="comments.html">Comments</a></li>
+								<li><a class="slide-item" href="email-users.html">Email-Users</a></li>
+								<li><a class="slide-item" href="media-gallery.html">Media Gallery</a></li>
+								<li><a class="slide-item" href="newad.html">New Ad</a></li>
+								<li><a class="slide-item" href="newuser.html">New User</a></li>
+								<li><a class="slide-item" href="favourite-ads.html">Favourite-Ads</a></li>
+								<li><a class="slide-item" href="payment-orders.html">Payment Orders</a></li>
+								<li><a class="slide-item" href="payments-adpacks.html">Payment Adpacks</a></li>
+								<li><a class="slide-item" href="payment-settings.html">Payment Settings</a></li>
+								<li><a class="slide-item" href="payments-membership.html">Payment Membership</a></li>
+								<li><a class="slide-item" href="profile-admin.html">Profile Admin</a></li>
+								<li><a class="slide-item" href="settings.html">Settings</a></li>
+								<li><a class="slide-item" href="users-all.html">All Users</a></li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-rocket"></i><span class="side-menu__label">Apps</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="cards.html" class="slide-item">Cards design</a>
+								</li>
+								<li>
+									<a href="chat.html" class="slide-item">Default Chat</a>
+								</li>
+								<li>
+									<a href="notify.html" class="slide-item">Notifications</a>
+								</li>
+								<li>
+									<a href="email.html" class="slide-item">Email</a>
+								</li>
+								<li>
+									<a href="emailservices.html" class="slide-item">Email Inbox</a>
+								</li>
+								<li>
+									<a href="sweetalert.html" class="slide-item">Sweet alerts</a>
+								</li>
+								<li>
+									<a href="rangeslider.html" class="slide-item">Range slider</a>
+								</li>
+								<li>
+									<a href="scroll.html" class="slide-item">Content Scroll bar</a>
+								</li>
+								<li>
+									<a href="counters.html" class="slide-item">Counters</a>
+								</li>
+								<li>
+									<a href="loaders.html" class="slide-item">Loaders</a>
+								</li>
+								<li>
+									<a href="time-line.html" class="slide-item">Time Line</a>
+								</li>
+								<li>
+									<a href="rating.html" class="slide-item">Rating </a>
+								</li>
+								<li>
+									<a href="users-list.html" class="slide-item">User List</a>
+								</li>
+								<li>
+									<a href="search.html" class="slide-item">Search page</a>
+								</li>
+								<li>
+									<a href="crypto-currencies.html" class="slide-item">Crypto-currencies</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="side-menu__item" href="widgets.html"><i class="side-menu__icon ti-package"></i><span class="side-menu__label">Widget</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fa fa-calendar"></i><span class="side-menu__label">Calendar</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="calendar.html" class="slide-item">Default calendar</a>
+								</li>
+								<li>
+									<a href="calendar2.html" class="slide-item">Full calendar</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-bar-chart"></i><span class="side-menu__label">Charts</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="chart-chartist.html" class="slide-item">Chartjs Charts </a>
+								</li>
+								<li>
+									<a href="chart-dygraph.html" class="slide-item">Dygraph Charts</a>
+								</li>
+								<li>
+									<a href="chart-echart.html" class="slide-item">Echart Charts</a>
+								</li>
+								<li>
+									<a href="chart-flot.html" class="slide-item">Flot Charts</a>
+								</li>
+								<li>
+									<a href="chart-nvd3.html" class="slide-item">Nvd3 Charts</a>
+								</li>
+								<li>
+									<a href="sparklinechart.html" class="slide-item">Sparkline Chart</a>
+								</li>
+								<li>
+									<a href="chart-morris.html" class="slide-item">Morris Charts</a>
+								</li>
+								<li>
+									<a href="charts.html" class="slide-item">C3 Bar Charts</a>
+								</li>
+								<li>
+									<a href="chart-line.html" class="slide-item">C3 Line Charts</a>
+								</li>
+								<li>
+									<a href="chart-donut.html" class="slide-item">C3 Donut Charts</a>
+								</li>
+								<li>
+									<a href="chart-pie.html" class="slide-item">C3 Pie charts</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-layers"></i><span class="side-menu__label"> Elements</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="alerts.html" class="slide-item">Alerts</a>
+								</li>
+								<li>
+									<a href="buttons.html" class="slide-item">Buttons</a>
+								</li>
+								<li>
+									<a href="colors.html" class="slide-item">Colors</a>
+								</li>
+								<li>
+									<a href="avatars.html" class="slide-item">Avatar-Square</a>
+								</li>
+								<li>
+									<a href="avatar-round.html" class="slide-item">Avatar-Rounded</a>
+								</li>
+								<li>
+									<a href="avatar-radius.html" class="slide-item">Avatar-Radius</a>
+								</li>
+								<li>
+									<a href="dropdown.html" class="slide-item">Drop downs</a>
+								</li>
+								<li>
+									<a href="thumbnails.html" class="slide-item">Thumbnails</a>
+								</li>
+								<li>
+									<a href="mediaobject.html" class="slide-item">Media Object</a>
+								</li>
+								<li>
+									<a href="list.html" class="slide-item">List</a>
+								</li>
+								<li>
+									<a href="tags.html" class="slide-item">Tags</a>
+								</li>
+								<li>
+									<a href="pagination.html" class="slide-item">Pagination</a>
+								</li>
+								<li>
+									<a href="navigation.html" class="slide-item">Navigation</a>
+								</li>
+								<li>
+									<a href="typography.html" class="slide-item">Typography</a>
+								</li>
+								<li>
+									<a href="breadcrumbs.html" class="slide-item">Breadcrumbs</a>
+								</li>
+								<li>
+									<a href="badge.html" class="slide-item">Badges</a>
+								</li>
+								<li>
+									<a href="jumbotron.html" class="slide-item">Jumbotron</a>
+								</li>
+								<li>
+									<a href="panels.html" class="slide-item">Panels</a>
+								</li>
+								<li>
+									<a href="modal.html" class="slide-item">Modal</a>
+								</li>
+								<li>
+									<a href="tooltipandpopover.html" class="slide-item">Tooltip and popover</a>
+								</li>
+								<li>
+									<a href="progress.html" class="slide-item">Progress</a>
+								</li>
+								<li>
+									<a href="carousel.html" class="slide-item">Carousels</a>
+								</li>
+								<li>
+									<a href="accordion.html" class="slide-item">Accordions</a>
+								</li>
+								<li>
+									<a href="tabs.html" class="slide-item">Tabs</a>
+								</li>
+								<li>
+									<a href="headers.html" class="slide-item">Headers</a>
+								</li>
+								<li>
+									<a href="footers.html" class="slide-item">Footers</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-receipt"></i><span class="side-menu__label">Forms</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="form-elements.html" class="slide-item">Form Elements</a>
+								</li>
+								<li>
+									<a href="form-wizard.html" class="slide-item">Form-wizard Elements</a>
+								</li>
+								<li>
+									<a href="wysiwyag.html" class="slide-item">Text Editor</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-clipboard"></i><span class="side-menu__label">Tables</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="tables.html" class="slide-item">Default table</a>
+								</li>
+								<li>
+									<a href="datatable.html" class="slide-item">Data Table</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="side-menu__item" href="maps.html"><i class="side-menu__icon ti-map-alt"></i><span class="side-menu__label"> Maps</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-shield"></i><span class="side-menu__label">Icons</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="icons.html" class="slide-item">Font Awesome</a>
+								</li>
+								<li>
+									<a href="icons2.html" class="slide-item">Material Design Icons</a>
+								</li>
+								<li>
+									<a href="icons3.html" class="slide-item">Simple Line Iocns</a>
+								</li>
+								<li>
+									<a href="icons4.html" class="slide-item">Feather Icons</a>
+								</li>
+								<li>
+									<a href="icons5.html" class="slide-item">Ionic Icons</a>
+								</li>
+								<li>
+									<a href="icons6.html" class="slide-item">Flag Icons</a>
+								</li>
+								<li>
+									<a href="icons7.html" class="slide-item">pe7 Icons</a>
+								</li>
+								<li>
+									<a href="icons8.html" class="slide-item">Themify Icons</a>
+								</li>
+								<li>
+									<a href="icons9.html" class="slide-item">Typicons Icons</a>
+								</li>
+								<li>
+									<a href="icons10.html" class="slide-item">Weather Icons</a>
+								</li>
+								<li>
+									<a href="icons11.html" class="slide-item">Car Icons</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-files"></i><span class="side-menu__label">Pages</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="profile.html" class="slide-item">Profile</a>
+								</li>
+								<li>
+									<a href="editprofile.html" class="slide-item">Edit Profile</a>
+								</li>
+								<li>
+									<a href="gallery.html" class="slide-item">Gallery</a>
+								</li>
+								<li>
+									<a href="about.html" class="slide-item">About Company</a>
+								</li>
+								<li>
+									<a href="company-history.html" class="slide-item">Company History</a>
+								</li>
+								<li>
+									<a href="services.html" class="slide-item">Services</a>
+								</li>
+								<li>
+									<a href="faq.html" class="slide-item">FAQS</a>
+								</li>
+								<li>
+									<a href="terms.html" class="slide-item">Terms and Conditions</a>
+								</li>
+								<li>
+									<a href="empty.html" class="slide-item">Empty Page</a>
+								</li>
+								<li>
+									<a href="construction.html" class="slide-item">Under Construction</a>
+								</li>
+								<li>
+									<a href="blog.html" class="slide-item">Blog</a>
+								</li>
+								<li>
+									<a href="invoice.html" class="slide-item">Invoice</a>
+								</li>
+								<li>
+									<a href="pricing.html" class="slide-item">Pricing Tables</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-shopping-cart"></i><span class="side-menu__label">E-commerce</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="shop.html" class="slide-item">Products</a>
+								</li>
+								<li>
+									<a href="shop-des.html" class="slide-item">Product Details</a>
+								</li>
+								<li>
+									<a href="cart.html" class="slide-item">Shopping Cart</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-settings"></i><span class="side-menu__label">Custom  Pages</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="login.html" class="slide-item">Login</a>
+								</li>
+								<li>
+									<a href="register.html" class="slide-item">Register</a>
+								</li>
+								<li>
+									<a href="forgot-password.html" class="slide-item">Forgot password</a>
+								</li>
+								<li>
+									<a href="lockscreen.html" class="slide-item">Lock screen</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-info-alt"></i><span class="side-menu__label">Error pages</span><i class="angle fa fa-angle-left"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="400.html" class="slide-item">400 Error</a>
+								</li>
+								<li>
+									<a href="401.html" class="slide-item">401 Error</a>
+								</li>
+								<li>
+									<a href="403.html" class="slide-item">403 Error</a>
+								</li>
+								<li>
+									<a href="404.html" class="slide-item">404 Error</a>
+								</li>
+								<li>
+									<a href="500.html" class="slide-item">500 Error</a>
+								</li>
+								<li>
+									<a href="503.html" class="slide-item">503 Error</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide"><a href="documentation.html" class="btn btn-light btn-block mt-3">Documentation</a></li>
+					</ul>
+				</aside>
+				<!--/Sidebar menu-->
+
+				<!--App-Content-->
+				<div class="app-content">
+					<div class="side-app">
+						<div class="page-header">
+							<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+							<h4 class="page-title">Simpleline Icons</h4>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Icons</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Simpleline Icons</li>
+							</ol>
+						</div>
+						<div class="row row-cards">
+							<div class="col">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">Simpleline Icons</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div class="col-lg-12 col-sm-12">
+												<p>Simply beautiful open source icons. For more info <a href="https://iconmplelineicons.com" target="_blank">click here</a>.</p>
+												<p><code>&lt;i class="icon icon-user"&gt;&lt;/i&gt;</code></p>
+											</div>
+											<div class="col-lg-12 col-sm-12">
+												<div class="icons-list-wrap">
+													<ul class="icons-list">
+														<li class="icons-list-item"><i class="icon icon-user" data-toggle="tooltip" title="" data-original-title="icon-user"></i></li>
+														<li class="icons-list-item"><i class="icon icon-people" data-toggle="tooltip" title="" data-original-title="icon-people"></i></li>
+														<li class="icons-list-item"><i class="icon icon-user-female" data-toggle="tooltip" title="" data-original-title="icon-user-female"></i></li>
+														<li class="icons-list-item"><i class="icon icon-user-follow" data-toggle="tooltip" title="" data-original-title="icon-user-follow"></i></li>
+														<li class="icons-list-item"><i class="icon icon-user-following" data-toggle="tooltip" title="" data-original-title="icon-user-following"></i></li>
+														<li class="icons-list-item"><i class="icon icon-user-unfollow" data-toggle="tooltip" title="" data-original-title="icon-user-unfollow"></i></li>
+														<li class="icons-list-item"><i class="icon icon-login" data-toggle="tooltip" title="" data-original-title="icon-login"></i></li>
+														<li class="icons-list-item"><i class="icon icon-logout" data-toggle="tooltip" title="" data-original-title="icon-logout"></i></li>
+														<li class="icons-list-item"><i class="icon icon-emotsmile" data-toggle="tooltip" title="" data-original-title="icon-emotsmile"></i></li>
+														<li class="icons-list-item"><i class="icon icon-phone" data-toggle="tooltip" title="" data-original-title="icon-phone"></i></li>
+														<li class="icons-list-item"><i class="icon icon-call-end" data-toggle="tooltip" title="" data-original-title="icon-call-end"></i></li>
+														<li class="icons-list-item"><i class="icon icon-call-in" data-toggle="tooltip" title="" data-original-title="icon-call-in"></i></li>
+														<li class="icons-list-item"><i class="icon icon-call-out" data-toggle="tooltip" title="" data-original-title="icon-call-out"></i></li>
+														<li class="icons-list-item"><i class="icon icon-map" data-toggle="tooltip" title="" data-original-title="icon-map"></i></li>
+														<li class="icons-list-item"><i class="icon icon-location-pin" data-toggle="tooltip" title="" data-original-title="icon-location-pin"></i></li>
+														<li class="icons-list-item"><i class="icon icon-direction" data-toggle="tooltip" title="" data-original-title="icon-direction"></i></li>
+														<li class="icons-list-item"><i class="icon icon-directions" data-toggle="tooltip" title="" data-original-title="icon-directions"></i></li>
+														<li class="icons-list-item"><i class="icon icon-compass" data-toggle="tooltip" title="" data-original-title="icon-compass"></i></li>
+														<li class="icons-list-item"><i class="icon icon-layers" data-toggle="tooltip" title="" data-original-title="icon-layers"></i></li>
+														<li class="icons-list-item"><i class="icon icon-menu" data-toggle="tooltip" title="" data-original-title="icon-menu"></i></li>
+														<li class="icons-list-item"><i class="icon icon-list" data-toggle="tooltip" title="" data-original-title="icon-list"></i></li>
+														<li class="icons-list-item"><i class="icon icon-options-vertical" data-toggle="tooltip" title="" data-original-title="icon-options-vertical"></i></li>
+														<li class="icons-list-item"><i class="icon icon-options" data-toggle="tooltip" title="" data-original-title="icon-options"></i></li>
+														<li class="icons-list-item"><i class="icon icon-arrow-down" data-toggle="tooltip" title="" data-original-title="icon-arrow-down"></i></li>
+														<li class="icons-list-item"><i class="icon icon-arrow-left" data-toggle="tooltip" title="" data-original-title="icon-arrow-left"></i></li>
+														<li class="icons-list-item"><i class="icon icon-arrow-right" data-toggle="tooltip" title="" data-original-title="icon-arrow-right"></i></li>
+														<li class="icons-list-item"><i class="icon icon-arrow-up" data-toggle="tooltip" title="" data-original-title="icon-arrow-up"></i></li>
+														<li class="icons-list-item"><i class="icon icon-arrow-up-circle" data-toggle="tooltip" title="" data-original-title="icon-arrow-up-circle"></i></li>
+														<li class="icons-list-item"><i class="icon icon-arrow-left-circle" data-toggle="tooltip" title="" data-original-title="icon-arrow-left-circle"></i></li>
+														<li class="icons-list-item"><i class="icon icon-arrow-right-circle" data-toggle="tooltip" title="" data-original-title="icon-arrow-right-circle"></i></li>
+														<li class="icons-list-item"><i class="icon icon-arrow-down-circle" data-toggle="tooltip" title="" data-original-title="icon-arrow-down-circle"></i></li>
+														<li class="icons-list-item"><i class="icon icon-check" data-toggle="tooltip" title="" data-original-title="icon-check"></i></li>
+														<li class="icons-list-item"><i class="icon icon-clock" data-toggle="tooltip" title="" data-original-title="icon-clock"></i></li>
+														<li class="icons-list-item"><i class="icon icon-plus" data-toggle="tooltip" title="" data-original-title="icon-plus"></i></li>
+														<li class="icons-list-item"><i class="icon icon-minus" data-toggle="tooltip" title="" data-original-title="icon-minus"></i></li>
+														<li class="icons-list-item"><i class="icon icon-close" data-toggle="tooltip" title="" data-original-title="icon-close"></i></li>
+														<li class="icons-list-item"><i class="icon icon-event" data-toggle="tooltip" title="" data-original-title="icon-event"></i></li>
+														<li class="icons-list-item"><i class="icon icon-exclamation" data-toggle="tooltip" title="" data-original-title="icon-exclamation"></i></li>
+														<li class="icons-list-item"><i class="icon icon-organization" data-toggle="tooltip" title="" data-original-title="icon-organization"></i></li>
+														<li class="icons-list-item"><i class="icon icon-trophy" data-toggle="tooltip" title="" data-original-title="icon-trophy"></i></li>
+														<li class="icons-list-item"><i class="icon icon-screen-smartphone" data-toggle="tooltip" title="" data-original-title="icon-screen-smartphone"></i></li>
+														<li class="icons-list-item"><i class="icon icon-screen-desktop" data-toggle="tooltip" title="" data-original-title="icon-screen-desktop"></i></li>
+														<li class="icons-list-item"><i class="icon icon-plane" data-toggle="tooltip" title="" data-original-title="icon-plane"></i></li>
+														<li class="icons-list-item"><i class="icon icon-notebook" data-toggle="tooltip" title="" data-original-title="icon-notebook"></i></li>
+														<li class="icons-list-item"><i class="icon icon-mustache" data-toggle="tooltip" title="" data-original-title="icon-mustache"></i></li>
+														<li class="icons-list-item"><i class="icon icon-mouse" data-toggle="tooltip" title="" data-original-title="icon-mouse"></i></li>
+														<li class="icons-list-item"><i class="icon icon-magnet" data-toggle="tooltip" title="" data-original-title="icon-magnet"></i></li>
+														<li class="icons-list-item"><i class="icon icon-energy" data-toggle="tooltip" title="" data-original-title="icon-energy"></i></li>
+														<li class="icons-list-item"><i class="icon icon-disc" data-toggle="tooltip" title="" data-original-title="icon-disc"></i></li>
+														<li class="icons-list-item"><i class="icon icon-cursor" data-toggle="tooltip" title="" data-original-title="icon-cursor"></i></li>
+														<li class="icons-list-item"><i class="icon icon-cursor-move" data-toggle="tooltip" title="" data-original-title="icon-cursor-move"></i></li>
+														<li class="icons-list-item"><i class="icon icon-crop" data-toggle="tooltip" title="" data-original-title="icon-crop"></i></li>
+														<li class="icons-list-item"><i class="icon icon-chemistry" data-toggle="tooltip" title="" data-original-title="icon-chemistry"></i></li>
+														<li class="icons-list-item"><i class="icon icon-speedometer" data-toggle="tooltip" title="" data-original-title="icon-speedometer"></i></li>
+														<li class="icons-list-item"><i class="icon icon-shield" data-toggle="tooltip" title="" data-original-title="icon-shield"></i></li>
+														<li class="icons-list-item"><i class="icon icon-screen-tablet" data-toggle="tooltip" title="" data-original-title="icon-screen-tablet"></i></li>
+														<li class="icons-list-item"><i class="icon icon-magic-wand" data-toggle="tooltip" title="" data-original-title="icon-magic-wand"></i></li>
+														<li class="icons-list-item"><i class="icon icon-hourglass" data-toggle="tooltip" title="" data-original-title="icon-hourglass"></i></li>
+														<li class="icons-list-item"><i class="icon icon-graduation" data-toggle="tooltip" title="" data-original-title="icon-graduation"></i></li>
+														<li class="icons-list-item"><i class="icon icon-ghost" data-toggle="tooltip" title="" data-original-title="icon-ghost"></i></li>
+														<li class="icons-list-item"><i class="icon icon-game-controller" data-toggle="tooltip" title="" data-original-title="icon-game-controller"></i></li>
+														<li class="icons-list-item"><i class="icon icon-fire" data-toggle="tooltip" title="" data-original-title="icon-fire"></i></li>
+														<li class="icons-list-item"><i class="icon icon-eyeglass" data-toggle="tooltip" title="" data-original-title="icon-eyeglass"></i></li>
+														<li class="icons-list-item"><i class="icon icon-envelope-open" data-toggle="tooltip" title="" data-original-title="icon-envelope-open"></i></li>
+														<li class="icons-list-item"><i class="icon icon-envelope-letter" data-toggle="tooltip" title="" data-original-title="icon-envelope-letter"></i></li>
+														<li class="icons-list-item"><i class="icon icon-bell" data-toggle="tooltip" title="" data-original-title="icon-bell"></i></li>
+														<li class="icons-list-item"><i class="icon icon-badge" data-toggle="tooltip" title="" data-original-title="icon-badge"></i></li>
+														<li class="icons-list-item"><i class="icon icon-anchor" data-toggle="tooltip" title="" data-original-title="icon-anchor"></i></li>
+														<li class="icons-list-item"><i class="icon icon-wallet" data-toggle="tooltip" title="" data-original-title="icon-wallet"></i></li>
+														<li class="icons-list-item"><i class="icon icon-vector" data-toggle="tooltip" title="" data-original-title="icon-vector"></i></li>
+														<li class="icons-list-item"><i class="icon icon-speech" data-toggle="tooltip" title="" data-original-title="icon-speech"></i></li>
+														<li class="icons-list-item"><i class="icon icon-puzzle" data-toggle="tooltip" title="" data-original-title="icon-puzzle"></i></li>
+														<li class="icons-list-item"><i class="icon icon-printer" data-toggle="tooltip" title="" data-original-title="icon-printer"></i></li>
+														<li class="icons-list-item"><i class="icon icon-present" data-toggle="tooltip" title="" data-original-title="icon-present"></i></li>
+														<li class="icons-list-item"><i class="icon icon-playlist" data-toggle="tooltip" title="" data-original-title="icon-playlist"></i></li>
+														<li class="icons-list-item"><i class="icon icon-pin" data-toggle="tooltip" title="" data-original-title="icon-pin"></i></li>
+														<li class="icons-list-item"><i class="icon icon-picture" data-toggle="tooltip" title="" data-original-title="icon-picture"></i></li>
+														<li class="icons-list-item"><i class="icon icon-handbag" data-toggle="tooltip" title="" data-original-title="icon-handbag"></i></li>
+														<li class="icons-list-item"><i class="icon icon-globe-alt" data-toggle="tooltip" title="" data-original-title="icon-globe-alt"></i></li>
+														<li class="icons-list-item"><i class="icon icon-globe" data-toggle="tooltip" title="" data-original-title="icon-globe"></i></li>
+														<li class="icons-list-item"><i class="icon icon-folder-alt" data-toggle="tooltip" title="" data-original-title="icon-folder-alt"></i></li>
+														<li class="icons-list-item"><i class="icon icon-folder" data-toggle="tooltip" title="" data-original-title="icon-folder"></i></li>
+														<li class="icons-list-item"><i class="icon icon-film" data-toggle="tooltip" title="" data-original-title="icon-film"></i></li>
+														<li class="icons-list-item"><i class="icon icon-feed" data-toggle="tooltip" title="" data-original-title="icon-feed"></i></li>
+														<li class="icons-list-item"><i class="icon icon-drop" data-toggle="tooltip" title="" data-original-title="icon-drop"></i></li>
+														<li class="icons-list-item"><i class="icon icon-drawer" data-toggle="tooltip" title="" data-original-title="icon-drawer"></i></li>
+														<li class="icons-list-item"><i class="icon icon-docs" data-toggle="tooltip" title="" data-original-title="icon-docs"></i></li>
+														<li class="icons-list-item"><i class="icon icon-doc" data-toggle="tooltip" title="" data-original-title="icon-doc"></i></li>
+														<li class="icons-list-item"><i class="icon icon-diamond" data-toggle="tooltip" title="" data-original-title="icon-diamond"></i></li>
+														<li class="icons-list-item"><i class="icon icon-cup" data-toggle="tooltip" title="" data-original-title="icon-cup"></i></li>
+														<li class="icons-list-item"><i class="icon icon-calculator" data-toggle="tooltip" title="" data-original-title="icon-calculator"></i></li>
+														<li class="icons-list-item"><i class="icon icon-bubbles" data-toggle="tooltip" title="" data-original-title="icon-bubbles"></i></li>
+														<li class="icons-list-item"><i class="icon icon-briefcase" data-toggle="tooltip" title="" data-original-title="icon-briefcase"></i></li>
+														<li class="icons-list-item"><i class="icon icon-book-open" data-toggle="tooltip" title="" data-original-title="icon-book-open"></i></li>
+														<li class="icons-list-item"><i class="icon icon-basket-loaded" data-toggle="tooltip" title="" data-original-title="icon-basket-loaded"></i></li>
+														<li class="icons-list-item"><i class="icon icon-basket" data-toggle="tooltip" title="" data-original-title="icon-basket"></i></li>
+														<li class="icons-list-item"><i class="icon icon-bag" data-toggle="tooltip" title="" data-original-title="icon-bag"></i></li>
+														<li class="icons-list-item"><i class="icon icon-action-undo" data-toggle="tooltip" title="" data-original-title="icon-action-undo"></i></li>
+														<li class="icons-list-item"><i class="icon icon-action-redo" data-toggle="tooltip" title="" data-original-title="icon-action-redo"></i></li>
+														<li class="icons-list-item"><i class="icon icon-wrench" data-toggle="tooltip" title="" data-original-title="icon-wrench"></i></li>
+														<li class="icons-list-item"><i class="icon icon-umbrella" data-toggle="tooltip" title="" data-original-title="icon-umbrella"></i></li>
+														<li class="icons-list-item"><i class="icon icon-trash" data-toggle="tooltip" title="" data-original-title="icon-trash"></i></li>
+														<li class="icons-list-item"><i class="icon icon-tag" data-toggle="tooltip" title="" data-original-title="icon-tag"></i></li>
+														<li class="icons-list-item"><i class="icon icon-support" data-toggle="tooltip" title="" data-original-title="icon-support"></i></li>
+														<li class="icons-list-item"><i class="icon icon-frame" data-toggle="tooltip" title="" data-original-title="icon-frame"></i></li>
+														<li class="icons-list-item"><i class="icon icon icon-size-fullscreen" data-toggle="tooltip" title="" data-original-title="icon-size-fullscreen"></i></li>
+														<li class="icons-list-item"><i class="icon icon-size-actual" data-toggle="tooltip" title="" data-original-title="icon-size-actual"></i></li>
+														<li class="icons-list-item"><i class="icon icon-shuffle" data-toggle="tooltip" title="" data-original-title="icon-shuffle"></i></li>
+														<li class="icons-list-item"><i class="icon icon-share-alt" data-toggle="tooltip" title="" data-original-title="icon-share-alt"></i></li>
+														<li class="icons-list-item"><i class="icon icon-share" data-toggle="tooltip" title="" data-original-title="icon-share"></i></li>
+														<li class="icons-list-item"><i class="icon icon-rocket" data-toggle="tooltip" title="" data-original-title="icon-rocket"></i></li>
+														<li class="icons-list-item"><i class="icon icon-question" data-toggle="tooltip" title="" data-original-title="icon-question"></i></li>
+														<li class="icons-list-item"><i class="icon icon-pie-chart" data-toggle="tooltip" title="" data-original-title="icon-pie-chart"></i></li>
+														<li class="icons-list-item"><i class="icon icon-pencil" data-toggle="tooltip" title="" data-original-title="icon-pencil"></i></li>
+														<li class="icons-list-item"><i class="icon icon-note" data-toggle="tooltip" title="" data-original-title="icon-note"></i></li>
+														<li class="icons-list-item"><i class="icon icon-loop" data-toggle="tooltip" title="" data-original-title="icon-loop"></i></li>
+														<li class="icons-list-item"><i class="icon icon-home" data-toggle="tooltip" title="" data-original-title="icon-home"></i></li>
+														<li class="icons-list-item"><i class="icon icon-grid" data-toggle="tooltip" title="" data-original-title="icon-grid"></i></li>
+														<li class="icons-list-item"><i class="icon icon-graph" data-toggle="tooltip" title="" data-original-title="icon-graph"></i></li>
+														<li class="icons-list-item"><i class="icon icon-microphone" data-toggle="tooltip" title="" data-original-title="icon-microphone"></i></li>
+														<li class="icons-list-item"><i class="icon icon-music-tone-alt" data-toggle="tooltip" title="" data-original-title="icon-music-tone-alt"></i></li>
+														<li class="icons-list-item"><i class="icon icon-music-tone" data-toggle="tooltip" title="" data-original-title="icon-music-tone"></i></li>
+														<li class="icons-list-item"><i class="icon icon-earphones-alt" data-toggle="tooltip" title="" data-original-title="icon-earphones-alt"></i></li>
+														<li class="icons-list-item"><i class="icon icon-earphones" data-toggle="tooltip" title="" data-original-title="icon-earphones"></i></li>
+														<li class="icons-list-item"><i class="icon icon-equalizer" data-toggle="tooltip" title="" data-original-title="icon-equalizer"></i></li>
+														<li class="icons-list-item"><i class="icon icon-like" data-toggle="tooltip" title="" data-original-title="icon-like"></i></li>
+														<li class="icons-list-item"><i class="icon icon-dislike" data-toggle="tooltip" title="" data-original-title="icon-dislike"></i></li>
+														<li class="icons-list-item"><i class="icon icon-control-start" data-toggle="tooltip" title="" data-original-title="icon-control-start"></i></li>
+														<li class="icons-list-item"><i class="icon icon-control-rewind" data-toggle="tooltip" title="" data-original-title="icon-control-rewind"></i></li>
+														<li class="icons-list-item"><i class="icon icon-control-play" data-toggle="tooltip" title="" data-original-title="icon-control-play"></i></li>
+														<li class="icons-list-item"><i class="icon icon-control-pause" data-toggle="tooltip" title="" data-original-title="icon-control-pause"></i></li>
+														<li class="icons-list-item"><i class="icon icon-control-forward" data-toggle="tooltip" title="" data-original-title="icon-control-forward"></i></li>
+														<li class="icons-list-item"><i class="icon icon-control-end" data-toggle="tooltip" title="" data-original-title="icon-control-end"></i></li>
+														<li class="icons-list-item"><i class="icon icon-volume-1" data-toggle="tooltip" title="" data-original-title="icon-volume-1"></i></li>
+														<li class="icons-list-item"><i class="icon icon-volume-2" data-toggle="tooltip" title="" data-original-title="icon-volume-2"></i></li>
+														<li class="icons-list-item"><i class="icon icon-volume-off" data-toggle="tooltip" title="" data-original-title="icon-volume-off"></i></li>
+														<li class="icons-list-item"><i class="icon icon-calendar" data-toggle="tooltip" title="" data-original-title="icon-calendar"></i></li>
+														<li class="icons-list-item"><i class="icon icon-bulb" data-toggle="tooltip" title="" data-original-title="icon-bulb"></i></li>
+														<li class="icons-list-item"><i class="icon icon-chart" data-toggle="tooltip" title="" data-original-title="icon-chart"></i></li>
+														<li class="icons-list-item"><i class="icon icon-ban" data-toggle="tooltip" title="" data-original-title="icon-ban"></i></li>
+														<li class="icons-list-item"><i class="icon icon-bubble" data-toggle="tooltip" title="" data-original-title="icon-bubble"></i></li>
+														<li class="icons-list-item"><i class="icon icon-camrecorder" data-toggle="tooltip" title="" data-original-title="icon-camrecorder"></i></li>
+														<li class="icons-list-item"><i class="icon icon-camera" data-toggle="tooltip" title="" data-original-title="icon-camera"></i></li>
+														<li class="icons-list-item"><i class="icon icon-cloud-download" data-toggle="tooltip" title="" data-original-title="icon-cloud-download"></i></li>
+														<li class="icons-list-item"><i class="icon icon-cloud-upload" data-toggle="tooltip" title="" data-original-title="icon-cloud-upload"></i></li>
+														<li class="icons-list-item"><i class="icon icon-envelope" data-toggle="tooltip" title="" data-original-title="icon-envelope"></i></li>
+														<li class="icons-list-item"><i class="icon icon-eye" data-toggle="tooltip" title="" data-original-title="icon-eye"></i></li>
+														<li class="icons-list-item"><i class="icon icon-flag" data-toggle="tooltip" title="" data-original-title="icon-flag"></i></li>
+														<li class="icons-list-item"><i class="icon icon-heart" data-toggle="tooltip" title="" data-original-title="icon-heart"></i></li>
+														<li class="icons-list-item"><i class="icon icon-info" data-toggle="tooltip" title="" data-original-title="icon-info"></i></li>
+														<li class="icons-list-item"><i class="icon icon-key" data-toggle="tooltip" title="" data-original-title="icon-key"></i></li>
+														<li class="icons-list-item"><i class="icon icon-link" data-toggle="tooltip" title="" data-original-title="icon-link"></i></li>
+														<li class="icons-list-item"><i class="icon icon-lock" data-toggle="tooltip" title="" data-original-title="icon-lock"></i></li>
+														<li class="icons-list-item"><i class="icon icon-lock-open" data-toggle="tooltip" title="" data-original-title="icon-lock-open"></i></li>
+														<li class="icons-list-item"><i class="icon icon-magnifier" data-toggle="tooltip" title="" data-original-title="icon-magnifier"></i></li>
+														<li class="icons-list-item"><i class="icon icon-magnifier-add" data-toggle="tooltip" title="" data-original-title="icon-magnifier-add"></i></li>
+														<li class="icons-list-item"><i class="icon icon-magnifier-remove" data-toggle="tooltip" title="" data-original-title="icon-magnifier-remove"></i></li>
+														<li class="icons-list-item"><i class="icon icon-paper-clip" data-toggle="tooltip" title="" data-original-title="icon-paper-clip"></i></li>
+														<li class="icons-list-item"><i class="icon icon-paper-plane" data-toggle="tooltip" title="" data-original-title="icon-paper-plane"></i></li>
+														<li class="icons-list-item"><i class="icon icon-power" data-toggle="tooltip" title="" data-original-title="icon-power"></i></li>
+														<li class="icons-list-item"><i class="icon icon-refresh" data-toggle="tooltip" title="" data-original-title="icon-refresh"></i></li>
+														<li class="icons-list-item"><i class="icon icon-reload" data-toggle="tooltip" title="" data-original-title="icon-reload"></i></li>
+														<li class="icons-list-item"><i class="icon icon-settings" data-toggle="tooltip" title="" data-original-title="icon-settings"></i></li>
+														<li class="icons-list-item"><i class="icon icon-star" data-toggle="tooltip" title="" data-original-title="icon-star"></i></li>
+														<li class="icons-list-item"><i class="icon icon-symbol-female" data-toggle="tooltip" title="" data-original-title="icon-symbol-female"></i></li>
+														<li class="icons-list-item"><i class="icon icon-symbol-male" data-toggle="tooltip" title="" data-original-title="icon-symbol-male"></i></li>
+														<li class="icons-list-item"><i class="icon icon-target" data-toggle="tooltip" title="" data-original-title="icon-target"></i></li>
+														<li class="icons-list-item"><i class="icon icon-credit-card" data-toggle="tooltip" title="" data-original-title="icon-credit-card"></i></li>
+														<li class="icons-list-item"><i class="icon icon-paypal" data-toggle="tooltip" title="" data-original-title="icon-paypal"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-tumblr" data-toggle="tooltip" title="" data-original-title="icon-social-tumblr"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-twitter" data-toggle="tooltip" title="" data-original-title="icon-social-twitter"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-facebook" data-toggle="tooltip" title="" data-original-title="icon-social-facebook"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-instagram" data-toggle="tooltip" title="" data-original-title="icon-social-instagram"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-linkedin" data-toggle="tooltip" title="" data-original-title="icon-social-linkedin"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-pinterest" data-toggle="tooltip" title="" data-original-title="icon-social-pinterest"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-github" data-toggle="tooltip" title="" data-original-title="icon-social-github"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-google" data-toggle="tooltip" title="" data-original-title="icon-social-google"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-reddit" data-toggle="tooltip" title="" data-original-title="icon-social-reddit"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-skype" data-toggle="tooltip" title="" data-original-title="icon-social-skype"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-dribbble" data-toggle="tooltip" title="" data-original-title="icon-social-dribbble"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-behance" data-toggle="tooltip" title="" data-original-title="icon-social-behance"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-foursqare" data-toggle="tooltip" title="" data-original-title="icon-social-foursqare"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-soundcloud" data-toggle="tooltip" title="" data-original-title="icon-social-soundcloud"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-spotify" data-toggle="tooltip" title="" data-original-title="icon-social-spotify"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-stumbleupon" data-toggle="tooltip" title="" data-original-title="icon-social-stumbleupon"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-youtube" data-toggle="tooltip" title="" data-original-title="icon-social-youtube"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-dropbox" data-toggle="tooltip" title="" data-original-title="icon-social-dropbox"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-vkontakte" data-toggle="tooltip" title="" data-original-title="icon-social-vkontakte"></i></li>
+														<li class="icons-list-item"><i class="icon icon-social-steam" data-toggle="tooltip" title="" data-original-title="icon-social-steam"></i></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--App-Content-->
+			</div>
+
+			<!--Footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2019 <a href="#">Autolist</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--/Footer-->
+		</div>
+		<!--/Page-->
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" ><i class="fa fa-rocket"></i></a>
+
+		<!-- JQuery js-->
+		<script src="../assets/js/jquery-3.2.1.min.js"></script>
+
+		<!-- Bootstrap js -->
+		<script src="../assets/plugins/bootstrap-4.3.1/js/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+		<!--JQueryVehiclerkline Js-->
+		<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+		<!-- Circle Progress Js-->
+		<script src="../assets/js/circle-progress.min.js"></script>
+
+		<!-- Star Rating Js-->
+		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+		<!-- Fullside-menu Js-->
+		<script src="../assets/plugins/sidemenu/sidemenu.js"></script>
+
+		<!-- Custom scroll bar Js-->
+		<script src="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.js"></script>
+
+		<!--Counters -->
+		<script src="../assets/plugins/counters/counterup.min.js"></script>
+		<script src="../assets/plugins/counters/waypoints.min.js"></script>
+
+		<!-- Custom Js-->
+		<script src="../assets/js/admin-custom.js"></script>
+
+	</body>
+</html>

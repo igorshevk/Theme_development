@@ -1,0 +1,341 @@
+/*----- Badge ------*/
+
+.btn .badge {
+	position: relative;
+	top: -1px;
+}
+
+.badge-secondary {
+	color: $white;
+	background-color: #162946;
+	&[href] {
+		&:focus,
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			background-color: #162946;
+		}
+	}
+}
+
+.badge-success {
+	color: $white;
+	background-color: $primary6;
+	&[href] {
+		&:focus,
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			background-color: #3adfab;
+		}
+	}
+}
+
+.badge-info {
+	color: $white;
+	background-color: #1da1f3;
+	&[href] {
+		&:focus,
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			background-color: #1594ef;
+		}
+	}
+}
+
+.badge-warning {
+	color: $white;
+	background-color: $yellow;
+	&[href] {
+		&:focus,
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			background-color: #fa3;
+		}
+	}
+}
+
+.badge-danger {
+	color: $white;
+	background-color: $danger;
+	&[href] {
+		&:focus,
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			background-color: #fb5b50;
+		}
+	}
+}
+
+.badge-light {
+	color: #3d4e67;
+	background-color: $background;
+	&[href] {
+		&:focus,
+		&:hover {
+			color: #3d4e67;
+			text-decoration: none;
+			background-color: #dae0e5;
+		}
+	}
+}
+
+.badge-dark {
+	color: $white;
+	background-color: $dark;
+	&[href] {
+		&:focus,
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			background-color: #1d2124;
+		}
+	}
+}
+
+.badge-pink {
+	color: $white;
+	background-color: #ed3284;
+	&[href] {
+		&:focus,
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			background-color: #ed3284;
+		}
+	}
+}
+
+.badge {
+	display: inline-block;
+	padding: .25em .4em;
+	font-size: 100%;
+	font-weight: 300;
+	line-height: 1.2;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 3px;
+}
+
+.badge-pill {
+	padding-right: .6em;
+	padding-left: .6em;
+	border-radius: 10rem;
+}
+
+.badgetext {
+	float: right;
+}
+
+.badge-default {
+	background: rgb(233, 239, 247);
+	color: #7e8188;
+}
+
+.badge-offer {
+	position: absolute;
+	top: 0;
+	left: 15px;
+	z-index: 2;
+	padding: 5px;
+	font-weight: 400;
+	text-align: center;
+	color: $white;
+	font-size: 16px;
+	height: 33px;
+	width: 50px;
+	margin-bottom: 0;
+	&.bg-danger:after {
+		border-top: 12px solid $danger;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-primary:after {
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-secondary:after {
+		border-top: 12px solid #f6f7fb;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-success:after {
+		border-top: 12px solid $primary6;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-info:after {
+		border-top: 12px solid #1da1f3;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-warning:after {
+		border-top: 12px solid $yellow;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-purple:after {
+		border-top: 12px solid #6d33ff;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-pink:after {
+		border-top: 12px solid $pink;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+}
+
+.badge-offer1 {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	z-index: 2;
+	padding: 5px;
+	font-weight: 400;
+	text-align: center;
+	color: $white;
+	font-size: 16px;
+	height: 33px;
+	width: 50px;
+	margin-bottom: 0;
+	&.bg-danger:after {
+		border-top: 12px solid $danger;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-primary:after {
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-secondary:after {
+		border-top: 12px solid #f6f7fb;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-success:after {
+		border-top: 12px solid $primary6;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-info:after {
+		border-top: 12px solid #1da1f3;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-warning:after {
+		border-top: 12px solid $yellow;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-purple:after {
+		border-top: 12px solid #6d33ff;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+	&.bg-pink:after {
+		border-top: 12px solid $pink;
+		border-left: 25px solid transparent;
+		border-right: 25px solid transparent;
+		content: "";
+		height: 0;
+		left: 0;
+		position: absolute;
+		top: 33px;
+		width: 0;
+	}
+}

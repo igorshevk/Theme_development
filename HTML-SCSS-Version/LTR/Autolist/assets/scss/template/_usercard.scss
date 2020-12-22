@@ -1,0 +1,138 @@
+/*------ User Card -------*/
+
+.card .card-block {
+	padding: 15px;
+}
+
+.user-card .card-block .user-image {
+	position: relative;
+	margin: 0 auto;
+	display: inline-block;
+	padding: 5px;
+	width: 110px;
+	height: 110px;
+}
+
+.card .card-block p {
+	line-height: 1.4;
+	margin-top: 10px;
+}
+
+.user-card .card-block {
+	.activity-leval li {
+		display: inline-block;
+		width: 15%;
+		height: 4px;
+		margin: 0 3px;
+		background-color: #e9ebf9;
+	}
+	.counter-block {
+		color: $white;
+	}
+	.user-social-link i {
+		font-size: 30px;
+	}
+}
+
+.widget-user {
+	.widget-user-header {
+		padding: 20px;
+		height: 120px;
+	}
+	.widget-user-username {
+		margin-top: 0;
+		margin-bottom: 5px;
+		font-size: 25px;
+		font-weight: 300;
+		text-shadow: 0 1px 1px $black-2;
+		color: $white;
+	}
+	.widget-user-desc {
+		margin-top: 0;
+		color: $white;
+	}
+	.widget-user-image {
+		position: absolute;
+		top: 65px;
+		left: 50%;
+		margin-left: -45px;
+		>img {
+			width: 90px;
+			height: auto;
+			border: 3px solid $white;
+		}
+	}
+	.user-wideget-footer {
+		padding-top: 30px;
+	}
+}
+
+.user-wideget-footer {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-top: 1px solid #f4f4f4;
+	padding: 10px;
+	background-color: $white;
+}
+
+.user-wideget .border-right {
+	border-right: 1px solid #f4f4f4;
+}
+
+.description-block {
+	display: block;
+	margin: 10px 0;
+	text-align: center;
+	> {
+		.description-header {
+			margin: 0;
+			padding: 0;
+			font-weight: 600;
+			font-size: 16px;
+		}
+		.description-text {
+			text-transform: uppercase;
+			color: $color;
+		}
+	}
+}
+
+.socailicons {
+	.fa {
+		font-size: 70px;
+		text-align: right;
+		position: absolute;
+		top: 13px;
+		right: 0px;
+		outline: 0;
+	}
+	color: $white;
+	text-shadow: 1px 1px 2px $black-5;
+	a {
+		text-decoration: none;
+	}
+}
+
+.twitter1 {
+	background-color: #00acee !important;
+}
+
+.google-plus1 {
+	background-color: #dd4b39 !important;
+}
+
+.facebook-like1 {
+	background-color: #3b5998 !important;
+}
+
+.pinterest1 {
+	background-color: #bd081c !important;
+}
+
+.card-blog-overlay6 i {
+	font-size: 3rem;
+}
+
+.card-counter2 i {
+	font-size: 4.5em;
+}

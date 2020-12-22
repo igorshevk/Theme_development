@@ -1,0 +1,146 @@
+/*----- Footers  -----*/
+
+.footer {
+	background: $white;
+	border-top: 1px solid #d8dde6;
+	font-size: .875rem;
+	padding: 1.25rem 0;
+	color: #a7b4c9;
+	.social {
+		ul li {
+			float: left;
+			padding: 7px;
+			a {
+				color: #a7b4c9;
+			}
+		}
+		margin: 0 auto;
+	}
+	a:not(.btn) {
+		color: #1f252d;
+	}
+}
+
+@media print {
+	.footer {
+		display: none;
+	}
+}
+
+.footerimg img {
+	width: 35px;
+	height: 35px;
+}
+
+.footer-main {
+	.social li {
+		float: left;
+		margin-right: 15px;
+		display: inline-block;
+		list-style: none;
+		font-size: 20px;
+		a {
+			color: #a7b4c9;
+			line-height: 0;
+		}
+	}
+	.payments li {
+		float: left;
+		margin-right: 15px;
+		display: inline-block;
+		list-style: none;
+		font-size: 20px;
+		a {
+			color: $white-6;
+			line-height: 0;
+		}
+	}
+	h6 {
+		font-size: 18px;
+		margin-bottom: 1.2rem;
+	}
+}
+
+footer .border-bottom {
+	border-bottom: 1px solid rgba(167, 180, 201, 0.2) !important;
+}
+
+.footer-main {
+	p {
+		color: $white-7;
+	}
+	a {
+		line-height: 2;
+		transition: opacity .2s;
+		color: $white-6;
+	}
+	&.footer-main1 {
+		a {
+			color: $color;
+		}
+		.form-control {
+			border: 1px solid #d8dde6 !important;
+		}
+	}
+}
+
+.footer-links a {
+	color: $white-8;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.footer-main h6 {
+		margin-top: 2rem;
+	}
+	footer.bg-dark {
+		.text-left {
+			text-align: center !important;
+		}
+		.social {
+			li {
+				float: none;
+				text-align: center;
+			}
+			text-align: center;
+		}
+	}
+	.footer-main .row div:first-child h6 {
+		margin-top: 0;
+	}
+}
+
+.footer-main {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	border-top: 1px solid rgba(167, 180, 201, 0.1);
+	border-bottom: 1px solid rgba(167, 180, 201, 0.2);
+}
+
+footer .border-top {
+	border-top: 1px solid rgba(167, 180, 201, 0.2) !important;
+}
+
+.footer-main .form-control {
+	border: 0 !important;
+}
+
+.footer-payments {
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+	line-height: 1.25rem;
+	li {
+		display: inline-block;
+		padding: 0 11px;
+		font-size: 20px;
+	}
+}
+
+.footer-main img {
+	width: 80px;
+	border: 1px solid rgba(247, 247, 247, 0.5);
+	padding: 2px;
+}

@@ -1,0 +1,84 @@
+Autolist Update
+09 July 2020
+
+Updates:
+1)Scrollbar Update (Only in Dashboard)
+
+////////////////////////////////////////////////////////
+*************************  LTR  *************************
+////////////////////////////////////////////////////////
+
+1) Update p-scrollbar folder in plugins 
+
+   Step1 : Update "p-scrollbar " folder  root-path ----->  (assets\plugins\p-scrollbar)
+
+
+2) Add the below scss lines in admin-custom.scss  in css folder :-
+
+open  admin-custom.scss file root-path  (assets/css/admin-custom.scss)
+
+ADD: add below css in admin-custom.scss at end of file:-
+
+
+.content ,.content1 {
+   height:270px;
+   max-height:270px;
+   position:relative
+}
+
+
+3) Add the below js link in scroll.html  in dashboard folder :-
+
+open  scroll.html file root-path  (LTR\Autolist\Dashboard\scroll.tml)
+
+ADD: add below js link  in scroll.html 
+
+BEFORE:-
+	<!-- P-scroll js-->
+		<script src="../assets/plugins/p-scrollbar/p-scrollbar.js"></script>
+		<script src="../assets/plugins/p-scrollbar/p-scroll1.js"></script>
+		
+		
+AFTER:-
+	<!-- P-scroll js-->
+		<script src="../assets/plugins/p-scrollbar/p-scrollbar.js"></script>
+		<script src="../assets/plugins/p-scrollbar/p-scroll1.js"></script>
+		<script src="../assets/plugins/p-scrollbar/p-scroll2.js"></script>
+		
+		
+////////////////////////////////////////////////////////
+*************************  RTL  *************************
+////////////////////////////////////////////////////////
+
+
+1) Update p-scrollbar folder in plugins 
+
+Step1 : Update "p-scrollbar " folder  root-path ----->  (assets\plugins\p-scrollbar)
+
+2) Add the below scss lines in admin-custom.scss  in css-rtl folder :-
+
+open  admin-custom.scss file root-path  (assets/css-rtl/admin-custom.scss)
+
+ADD: add below css in admin-custom.scss at end of file:-
+
+.content ,.content1 {
+   height:270px;
+   max-height:270px;
+   position:relative
+}
+
+3) Add the below js link in scroll.html  in dashboard folder :-
+
+open  scroll.html file root-path  (RTL\Autolist\Dashboard\scroll.tml)
+
+ADD: add below js link  in scroll.html 
+
+BEFORE:-
+	<!-- P-scroll js-->
+		<script src="../assets/plugins/p-scrollbar/p-scrollbar.js"></script>
+		<script src="../assets/plugins/p-scrollbar/p-scroll1-rtl.js"></script>
+AFTER:-
+	<!-- P-scroll js-->
+		<script src="../assets/plugins/p-scrollbar/p-scrollbar.js"></script>
+		<script src="../assets/plugins/p-scrollbar/p-scroll1-rtl.js"></script>
+		<script src="../assets/plugins/p-scrollbar/p-scroll2-rtl.js"></script>

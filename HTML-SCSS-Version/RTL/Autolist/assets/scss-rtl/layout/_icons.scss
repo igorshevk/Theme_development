@@ -1,0 +1,61 @@
+/*----- Icons Style -----*/
+
+.icons-list {
+	list-style: none;
+	padding: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	>li {
+		-ms-flex: 1 0 4rem;
+		flex: 1 0 4rem;
+	}
+}
+
+.icons-list-wrap {
+	overflow: hidden;
+	border-right: 1px solid #d8dde6;
+	border-top: 1px solid #d8dde6;
+}
+
+.icons-list-item {
+	text-align: center;
+	height: 4rem;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-bottom: 1px solid #d8dde6;
+	border-left: 1px solid #d8dde6;
+	i {
+		font-size: 1.25rem;
+		color: #676a80;
+	}
+}
+
+.icon-bg i {
+	font-size: 1.5rem;
+}
+
+.icon-service {
+	display: inline-flex;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-card {
+	display: inline-block;
+	li {
+		float: left;
+		font-size: 13px;
+		width: 50%;
+		margin-bottom: .5rem;
+	}
+}

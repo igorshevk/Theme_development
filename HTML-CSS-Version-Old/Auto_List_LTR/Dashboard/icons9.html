@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="msapplication-TileColor" content="#162946">
+		<meta name="theme-color" content="#e67605">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+		<!-- Title -->
+		<title>Car Listing,Dealer,Rental Auto Classifieds Bootstrap Modern Responsive Clean HTML Template</title>
+
+		<!-- Sidemenu Css -->
+		<link href="../assets/plugins/sidemenu/sidemenu.css" rel="stylesheet" />
+
+		<!-- Bootstrap Css -->
+		<link href="../assets/plugins/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Dashboard Css -->
+		<link href="../assets/css/style.css" rel="stylesheet" />
+		<link href="../assets/css/admin-custom.css" rel="stylesheet" />
+
+		<!-- c3.js Charts Plugin -->
+		<link href="../assets/plugins/charts-c3/c3-chart.css" rel="stylesheet" />
+
+		<!-- Custom scroll bar css-->
+		<link href="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+
+		<!---Font icons-->
+		<link href="../assets/css/icons.css" rel="stylesheet"/>
+
+		<!-- Color-Skins -->
+		<link id="theme" rel="stylesheet" type="text/css" media="all" href="../assets/color-skins/color13.css" />
+
+	</head>
+	<body class="app sidebar-mini">
+
+		<!--Loader-->
+		<div id="global-loader">
+			<img src="../assets/images/loader.svg" class="loader-img " alt="">
+		</div>
+		<!--/Loader-->
+
+		<!--Page-->
+		<div class="page">
+			<div class="page-main">
+
+				<!--Header-->
+				<div class="app-header1 header py-1 d-flex">
+					<div class="container-fluid">
+						<div class="d-flex">
+							<a class="header-brand" href="index.html">
+								<img src="../assets/images/brand/logo.png" class="header-brand-img" alt="Claylist logo">
+							</a>
+							<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+							<div class="header-navicon">
+								<a href="#" data-toggle="search" class="nav-link d-lg-none navsearch-icon">
+									<i class="fa fa-search"></i>
+								</a>
+							</div>
+							<div class="header-navsearch">
+								<a href="#" class=" "></a>
+								<form class="form-inline mr-auto">
+									<div class="nav-search">
+										<input type="search" class="form-control header-search" placeholder="Search…" aria-label="Search" >
+										<button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+									</div>
+								</form>
+							</div>
+							<div class="d-flex order-lg-2 ml-auto">
+								<div class="dropdown d-none d-md-flex" >
+									<a  class="nav-link icon full-screen-link">
+										<i class="fe fe-maximize-2"  id="fullscreen-button"></i>
+									</a>
+								</div>
+								<div class="dropdown d-none d-md-flex country-selector">
+									<a href="#" class="d-flex nav-link leading-none" data-toggle="dropdown">
+										<img src="../assets/images/flags/us_flag.jpg" alt="img" class="avatar avatar-xs mr-1 align-self-center">
+										<div>
+											<strong class="text-dark">English</strong>
+										</div>
+									</a>
+									<div class="language-width dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/french_flag.jpg"  alt="flag-img" class="avatar  mr-3 align-self-center" >
+											<div>
+												<strong>French</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/germany_flag.jpg"  alt="flag-img" class="avatar  mr-3 align-self-center" >
+											<div>
+												<strong>Germany</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/italy_flag.jpg"  alt="flag-img" class="avatar  mr-3 align-self-center" >
+											<div>
+												<strong>Italy</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/russia_flag.jpg"  alt="flag-img" class="avatar  mr-3 align-self-center" >
+											<div>
+												<strong>Russia</strong>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/flags/spain_flag.jpg"  alt="flag-img" class="avatar  mr-3 align-self-center" >
+											<div>
+												<strong>Spain</strong>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="dropdown d-none d-md-flex">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="fa fa-bell-o"></i>
+										<span class=" nav-unread badge badge-danger badge-pill">4</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a href="#" class="dropdown-item text-center">You have 4 notification</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg">
+												<i class="fa fa-envelope-o"></i>
+											</div>
+											<div>
+												<strong>2 new Messages</strong>
+												<div class="small text-muted">17:50 Pm</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg">
+												<i class="fa fa-calendar"></i>
+											</div>
+											<div>
+												<strong> 1 Event Soon</strong>
+												<div class="small text-muted">19-10-2019</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg">
+												<i class="fa fa-comment-o"></i>
+											</div>
+											<div>
+												<strong> 3 new Comments</strong>
+												<div class="small text-muted">05:34 Am</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<div class="notifyimg">
+												<i class="fa fa-exclamation-triangle"></i>
+											</div>
+											<div>
+												<strong> Application Error</strong>
+												<div class="small text-muted">13:45 Pm</div>
+											</div>
+										</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item text-center">See all Notification</a>
+									</div>
+								</div>
+								<div class="dropdown d-none d-md-flex">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="fa fa-envelope-o"></i>
+										<span class=" nav-unread badge badge-warning  badge-pill">3</span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/users/male/41.jpg" alt="avatar-img" class="avatar brround mr-3 align-self-center">
+											<div>
+												<strong>Blake</strong> I've finished it! See you so.......
+												<div class="small text-muted">30 mins ago</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/users/female/1.jpg" alt="avatar-img" class="avatar brround mr-3 align-self-center">
+											<div>
+												<strong>Caroline</strong> Just see the my Admin....
+												<div class="small text-muted">12 mins ago</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/users/male/18.jpg" alt="avatar-img" class="avatar brround mr-3 align-self-center">
+											<div>
+												<strong>Jonathan</strong> Hi! I'am singer......
+												<div class="small text-muted">1 hour ago</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-3">
+											<img src="../assets/images/users/female/18.jpg" alt="avatar-img" class="avatar brround mr-3 align-self-center">
+											<div>
+												<strong>Emily</strong> Just a reminder.....
+												<div class="small text-muted">45 mins ago</div>
+											</div>
+										</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item text-center">View all Messages</a>
+									</div>
+								</div>
+								<div class="dropdown d-none d-md-flex">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="fe fe-grid"></i>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow  app-selector">
+										<ul class="drop-icon-wrap">
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-speech text-dark"></i>
+													<span class="block"> E-mail</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-map text-dark"></i>
+													<span class="block">map</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-bubbles text-dark"></i>
+													<span class="block">Messages</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-user-follow text-dark"></i>
+													<span class="block">Followers</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-picture text-dark"></i>
+													<span class="block">Photos</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="drop-icon-item">
+													<i class="icon icon-settings text-dark"></i>
+													<span class="block">Settings</span>
+												</a>
+											</li>
+										</ul>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item text-center">View all</a>
+									</div>
+								</div>
+								<div class="dropdown ">
+									<a href="#" class="nav-link pr-0 leading-none user-img" data-toggle="dropdown">
+										<img src="../assets/images/users/male/25.jpg" alt="profile-img" class="avatar avatar-md brround">
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow ">
+										<a class="dropdown-item" href="profile.html">
+											<i class="dropdown-icon icon icon-user"></i> My Profile
+										</a>
+										<a class="dropdown-item" href="emailservices.html">
+											<i class="dropdown-icon icon icon-speech"></i> Inbox
+										</a>
+										<a class="dropdown-item" href="editprofile.html">
+											<i class="dropdown-icon  icon icon-settings"></i> Account Settings
+										</a>
+										<a class="dropdown-item" href="login.html">
+											<i class="dropdown-icon icon icon-power"></i> Log out
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/Header-->
+
+				<!-- Sidebar menu-->
+				<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+				<aside class="app-sidebar doc-sidebar">
+					<div class="app-sidebar__user clearfix">
+						<div class="dropdown user-pro-body">
+							<div>
+								<img src="../assets/images/users/male/25.jpg" alt="user-img" class="avatar avatar-lg brround">
+								<a href="editprofile.html" class="profile-img">
+									<span class="fa fa-pencil" aria-hidden="true"></span>
+								</a>
+							</div>
+							<div class="user-info">
+								<h2>Rubin Carmody</h2>
+								<span>Web Designer</span>
+							</div>
+						</div>
+					</div>
+					<ul class="side-menu">
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-home"></i><span class="side-menu__label">Dashboard</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li><a class="slide-item" href="index.html">Dashboard 1</a></li>
+								<li><a class="slide-item" href="index2.html">Dashboard 2</a></li>
+								<li><a class="slide-item" href="index3.html">Dashboard 3</a></li>
+								<li><a class="slide-item" href="index4.html">Dashboard 4</a></li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-panel"></i><span class="side-menu__label">Admin settings</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li><a class="slide-item" href="admin-pricing.html">Admin Pricing</a></li>
+								<li><a class="slide-item" href="ads.html">Ads List</a></li>
+								<li><a class="slide-item" href="comments.html">Comments</a></li>
+								<li><a class="slide-item" href="email-users.html">Email-Users</a></li>
+								<li><a class="slide-item" href="media-gallery.html">Media Gallery</a></li>
+								<li><a class="slide-item" href="newad.html">New Ad</a></li>
+								<li><a class="slide-item" href="newuser.html">New User</a></li>
+								<li><a class="slide-item" href="favourite-ads.html">Favourite-Ads</a></li>
+								<li><a class="slide-item" href="payment-orders.html">Payment Orders</a></li>
+								<li><a class="slide-item" href="payments-adpacks.html">Payment Adpacks</a></li>
+								<li><a class="slide-item" href="payment-settings.html">Payment Settings</a></li>
+								<li><a class="slide-item" href="payments-membership.html">Payment Membership</a></li>
+								<li><a class="slide-item" href="profile-admin.html">Profile Admin</a></li>
+								<li><a class="slide-item" href="settings.html">Settings</a></li>
+								<li><a class="slide-item" href="users-all.html">All Users</a></li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-rocket"></i><span class="side-menu__label">Apps</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="cards.html" class="slide-item">Cards design</a>
+								</li>
+								<li>
+									<a href="chat.html" class="slide-item">Default Chat</a>
+								</li>
+								<li>
+									<a href="notify.html" class="slide-item">Notifications</a>
+								</li>
+								<li>
+									<a href="email.html" class="slide-item">Email</a>
+								</li>
+								<li>
+									<a href="emailservices.html" class="slide-item">Email Inbox</a>
+								</li>
+								<li>
+									<a href="sweetalert.html" class="slide-item">Sweet alerts</a>
+								</li>
+								<li>
+									<a href="rangeslider.html" class="slide-item">Range slider</a>
+								</li>
+								<li>
+									<a href="scroll.html" class="slide-item">Content Scroll bar</a>
+								</li>
+								<li>
+									<a href="counters.html" class="slide-item">Counters</a>
+								</li>
+								<li>
+									<a href="loaders.html" class="slide-item">Loaders</a>
+								</li>
+								<li>
+									<a href="time-line.html" class="slide-item">Time Line</a>
+								</li>
+								<li>
+									<a href="rating.html" class="slide-item">Rating </a>
+								</li>
+								<li>
+									<a href="users-list.html" class="slide-item">User List</a>
+								</li>
+								<li>
+									<a href="search.html" class="slide-item">Search page</a>
+								</li>
+								<li>
+									<a href="crypto-currencies.html" class="slide-item">Crypto-currencies</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="side-menu__item" href="widgets.html"><i class="side-menu__icon ti-package"></i><span class="side-menu__label">Widget</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon fa fa-calendar"></i><span class="side-menu__label">Calendar</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="calendar.html" class="slide-item">Default calendar</a>
+								</li>
+								<li>
+									<a href="calendar2.html" class="slide-item">Full calendar</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-bar-chart"></i><span class="side-menu__label">Charts</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="chart-chartist.html" class="slide-item">Chartjs Charts </a>
+								</li>
+								<li>
+									<a href="chart-dygraph.html" class="slide-item">Dygraph Charts</a>
+								</li>
+								<li>
+									<a href="chart-echart.html" class="slide-item">Echart Charts</a>
+								</li>
+								<li>
+									<a href="chart-flot.html" class="slide-item">Flot Charts</a>
+								</li>
+								<li>
+									<a href="chart-nvd3.html" class="slide-item">Nvd3 Charts</a>
+								</li>
+								<li>
+									<a href="sparklinechart.html" class="slide-item">Sparkline Chart</a>
+								</li>
+								<li>
+									<a href="chart-morris.html" class="slide-item">Morris Charts</a>
+								</li>
+								<li>
+									<a href="charts.html" class="slide-item">C3 Bar Charts</a>
+								</li>
+								<li>
+									<a href="chart-line.html" class="slide-item">C3 Line Charts</a>
+								</li>
+								<li>
+									<a href="chart-donut.html" class="slide-item">C3 Donut Charts</a>
+								</li>
+								<li>
+									<a href="chart-pie.html" class="slide-item">C3 Pie charts</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-layers"></i><span class="side-menu__label"> Elements</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="alerts.html" class="slide-item">Alerts</a>
+								</li>
+								<li>
+									<a href="buttons.html" class="slide-item">Buttons</a>
+								</li>
+								<li>
+									<a href="colors.html" class="slide-item">Colors</a>
+								</li>
+								<li>
+									<a href="avatars.html" class="slide-item">Avatar-Square</a>
+								</li>
+								<li>
+									<a href="avatar-round.html" class="slide-item">Avatar-Rounded</a>
+								</li>
+								<li>
+									<a href="avatar-radius.html" class="slide-item">Avatar-Radius</a>
+								</li>
+								<li>
+									<a href="dropdown.html" class="slide-item">Drop downs</a>
+								</li>
+								<li>
+									<a href="thumbnails.html" class="slide-item">Thumbnails</a>
+								</li>
+								<li>
+									<a href="mediaobject.html" class="slide-item">Media Object</a>
+								</li>
+								<li>
+									<a href="list.html" class="slide-item">List</a>
+								</li>
+								<li>
+									<a href="tags.html" class="slide-item">Tags</a>
+								</li>
+								<li>
+									<a href="pagination.html" class="slide-item">Pagination</a>
+								</li>
+								<li>
+									<a href="navigation.html" class="slide-item">Navigation</a>
+								</li>
+								<li>
+									<a href="typography.html" class="slide-item">Typography</a>
+								</li>
+								<li>
+									<a href="breadcrumbs.html" class="slide-item">Breadcrumbs</a>
+								</li>
+								<li>
+									<a href="badge.html" class="slide-item">Badges</a>
+								</li>
+								<li>
+									<a href="jumbotron.html" class="slide-item">Jumbotron</a>
+								</li>
+								<li>
+									<a href="panels.html" class="slide-item">Panels</a>
+								</li>
+								<li>
+									<a href="modal.html" class="slide-item">Modal</a>
+								</li>
+								<li>
+									<a href="tooltipandpopover.html" class="slide-item">Tooltip and popover</a>
+								</li>
+								<li>
+									<a href="progress.html" class="slide-item">Progress</a>
+								</li>
+								<li>
+									<a href="carousel.html" class="slide-item">Carousels</a>
+								</li>
+								<li>
+									<a href="accordion.html" class="slide-item">Accordions</a>
+								</li>
+								<li>
+									<a href="tabs.html" class="slide-item">Tabs</a>
+								</li>
+								<li>
+									<a href="headers.html" class="slide-item">Headers</a>
+								</li>
+								<li>
+									<a href="footers.html" class="slide-item">Footers</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-receipt"></i><span class="side-menu__label">Forms</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="form-elements.html" class="slide-item">Form Elements</a>
+								</li>
+								<li>
+									<a href="form-wizard.html" class="slide-item">Form-wizard Elements</a>
+								</li>
+								<li>
+									<a href="wysiwyag.html" class="slide-item">Text Editor</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-clipboard"></i><span class="side-menu__label">Tables</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="tables.html" class="slide-item">Default table</a>
+								</li>
+								<li>
+									<a href="datatable.html" class="slide-item">Data Table</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="side-menu__item" href="maps.html"><i class="side-menu__icon ti-map-alt"></i><span class="side-menu__label"> Maps</span></a>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-shield"></i><span class="side-menu__label">Icons</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="icons.html" class="slide-item">Font Awesome</a>
+								</li>
+								<li>
+									<a href="icons2.html" class="slide-item">Material Design Icons</a>
+								</li>
+								<li>
+									<a href="icons3.html" class="slide-item">Simple Line Iocns</a>
+								</li>
+								<li>
+									<a href="icons4.html" class="slide-item">Feather Icons</a>
+								</li>
+								<li>
+									<a href="icons5.html" class="slide-item">Ionic Icons</a>
+								</li>
+								<li>
+									<a href="icons6.html" class="slide-item">Flag Icons</a>
+								</li>
+								<li>
+									<a href="icons7.html" class="slide-item">pe7 Icons</a>
+								</li>
+								<li>
+									<a href="icons8.html" class="slide-item">Themify Icons</a>
+								</li>
+								<li>
+									<a href="icons9.html" class="slide-item">Typicons Icons</a>
+								</li>
+								<li>
+									<a href="icons10.html" class="slide-item">Weather Icons</a>
+								</li>
+								<li>
+									<a href="icons11.html" class="slide-item">Car Icons</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-files"></i><span class="side-menu__label">Pages</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="profile.html" class="slide-item">Profile</a>
+								</li>
+								<li>
+									<a href="editprofile.html" class="slide-item">Edit Profile</a>
+								</li>
+								<li>
+									<a href="gallery.html" class="slide-item">Gallery</a>
+								</li>
+								<li>
+									<a href="about.html" class="slide-item">About Company</a>
+								</li>
+								<li>
+									<a href="company-history.html" class="slide-item">Company History</a>
+								</li>
+								<li>
+									<a href="services.html" class="slide-item">Services</a>
+								</li>
+								<li>
+									<a href="faq.html" class="slide-item">FAQS</a>
+								</li>
+								<li>
+									<a href="terms.html" class="slide-item">Terms and Conditions</a>
+								</li>
+								<li>
+									<a href="empty.html" class="slide-item">Empty Page</a>
+								</li>
+								<li>
+									<a href="construction.html" class="slide-item">Under Construction</a>
+								</li>
+								<li>
+									<a href="blog.html" class="slide-item">Blog</a>
+								</li>
+								<li>
+									<a href="invoice.html" class="slide-item">Invoice</a>
+								</li>
+								<li>
+									<a href="pricing.html" class="slide-item">Pricing Tables</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-shopping-cart"></i><span class="side-menu__label">E-commerce</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="shop.html" class="slide-item">Products</a>
+								</li>
+								<li>
+									<a href="shop-des.html" class="slide-item">Product Details</a>
+								</li>
+								<li>
+									<a href="cart.html" class="slide-item">Shopping Cart</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-settings"></i><span class="side-menu__label">Custom  Pages</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="login.html" class="slide-item">Login</a>
+								</li>
+								<li>
+									<a href="register.html" class="slide-item">Register</a>
+								</li>
+								<li>
+									<a href="forgot-password.html" class="slide-item">Forgot password</a>
+								</li>
+								<li>
+									<a href="lockscreen.html" class="slide-item">Lock screen</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide">
+							<a class="side-menu__item" data-toggle="slide" href="#"><i class="side-menu__icon ti-info-alt"></i><span class="side-menu__label">Error pages</span><i class="angle fa fa-angle-right"></i></a>
+							<ul class="slide-menu">
+								<li>
+									<a href="400.html" class="slide-item">400 Error</a>
+								</li>
+								<li>
+									<a href="401.html" class="slide-item">401 Error</a>
+								</li>
+								<li>
+									<a href="403.html" class="slide-item">403 Error</a>
+								</li>
+								<li>
+									<a href="404.html" class="slide-item">404 Error</a>
+								</li>
+								<li>
+									<a href="500.html" class="slide-item">500 Error</a>
+								</li>
+								<li>
+									<a href="503.html" class="slide-item">503 Error</a>
+								</li>
+							</ul>
+						</li>
+						<li class="slide"><a href="documentation.html" class="btn btn-light btn-block mt-3">Documentation</a></li>
+					</ul>
+				</aside>
+				<!--/Sidebar menu-->
+
+				<!--App-Content-->
+				<div class="app-content">
+					<div class="side-app">
+						<div class="page-header">
+							<a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-toggle="sidebar" href="#"></a>
+							<h4 class="page-title">Typicons icons</h4>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Icons</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Typicons icons</li>
+							</ol>
+						</div>
+						<div class="row row-cards">
+							<div class="col">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">Typicons icons</div>
+									</div>
+									<div class="card-body">
+										<div class="row">
+											<div class="col-lg-12 col-sm-12">
+												<p class="mb-1">Simply beautiful open source icons. For more info <a href="https://simplelineicons.com" target="_blank">click here</a>.</p>
+												<p class="mb-5"><code>&lt;i class="typcn typcn-ICON_NAME"&gt;&lt;/i&gt;</code></p>
+											</div>
+											<div class="col-lg-12 col-sm-12">
+												<div class="icons-list-wrap">
+													<ul class="icons-list">
+														<li class="icons-list-item"><i class="typcn typcn-chart-pie-outline" data-toggle="tooltip" title="typcn typcn-chart-pie-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-chart-pie" data-toggle="tooltip" title="typcn typcn-chart-pie"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-chevron-left-outline" data-toggle="tooltip" title="typcn typcn-chevron-left-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-chevron-left" data-toggle="tooltip" title="typcn typcn-chevron-left"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-chevron-right-outline" data-toggle="tooltip" title="typcn typcn-chevron-right-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-chevron-right" data-toggle="tooltip" title="typcn typcn-chevron-right"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-clipboard" data-toggle="tooltip" title="typcn typcn-clipboard"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-cloud-storage" data-toggle="tooltip" title="typcn typcn-cloud-storage"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-cloud-storage-outline" data-toggle="tooltip" title="typcn typcn-cloud-storage-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-code-outline" data-toggle="tooltip" title="typcn typcn-code-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-code" data-toggle="tooltip" title="typcn typcn-code"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-coffee" data-toggle="tooltip" title="typcn typcn-coffee"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-cog-outline" data-toggle="tooltip" title="typcn typcn-cog-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-cog" data-toggle="tooltip" title="typcn typcn-cog"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-compass" data-toggle="tooltip" title="typcn typcn-compass"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-contacts" data-toggle="tooltip" title="typcn typcn-contacts"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-credit-card" data-toggle="tooltip" title="typcn typcn-credit-card"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-css3" data-toggle="tooltip" title="typcn typcn-css3"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-database" data-toggle="tooltip" title="typcn typcn-database"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-delete-outline" data-toggle="tooltip" title="typcn typcn-delete-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-delete" data-toggle="tooltip" title="typcn typcn-delete"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-device-desktop" data-toggle="tooltip" title="typcn typcn-device-desktop"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-device-laptop" data-toggle="tooltip" title="typcn typcn-device-laptop"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-device-phone" data-toggle="tooltip" title="typcn typcn-device-phone"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-device-tablet" data-toggle="tooltip" title="typcn typcn-device-tablet"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-directions" data-toggle="tooltip" title="typcn typcn-directions"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-divide-outline" data-toggle="tooltip" title="typcn typcn-divide-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-divide" data-toggle="tooltip" title="typcn typcn-divide"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-document-add" data-toggle="tooltip" title="typcn typcn-document-add"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-document-delete" data-toggle="tooltip" title="typcn typcn-document-delete"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-document-text" data-toggle="tooltip" title="typcn typcn-document-text"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-document" data-toggle="tooltip" title="typcn typcn-document"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-download-outline" data-toggle="tooltip" title="typcn typcn-download-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-download" data-toggle="tooltip" title="typcn typcn-download"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-dropbox" data-toggle="tooltip" title="typcn typcn-dropbox"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-edit" data-toggle="tooltip" title="typcn typcn-edit"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-eject-outline" data-toggle="tooltip" title="typcn typcn-eject-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-eject" data-toggle="tooltip" title="typcn typcn-eject"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-equals-outline" data-toggle="tooltip" title="typcn typcn-equals-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-equals" data-toggle="tooltip" title="typcn typcn-equals"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-export-outline" data-toggle="tooltip" title="typcn typcn-export-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-export" data-toggle="tooltip" title="typcn typcn-export"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-eye-outline" data-toggle="tooltip" title="typcn typcn-eye-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-eye" data-toggle="tooltip" title="typcn typcn-eye"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-feather" data-toggle="tooltip" title="typcn typcn-feather"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-film" data-toggle="tooltip" title="typcn typcn-film"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-filter" data-toggle="tooltip" title="typcn typcn-filter"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-flag-outline" data-toggle="tooltip" title="typcn typcn-flag-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-flag" data-toggle="tooltip" title="typcn typcn-flag"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-flash-outline" data-toggle="tooltip" title="typcn typcn-flash-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-flash" data-toggle="tooltip" title="typcn typcn-flash"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-flow-children" data-toggle="tooltip" title="typcn typcn-flow-children"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-flow-merge" data-toggle="tooltip" title="typcn typcn-flow-merge"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-flow-parallel" data-toggle="tooltip" title="typcn typcn-flow-parallel"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-flow-switch" data-toggle="tooltip" title="typcn typcn-flow-switch"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-folder-add" data-toggle="tooltip" title="typcn typcn-folder-add"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-folder-delete" data-toggle="tooltip" title="typcn typcn-folder-delete"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-folder-open" data-toggle="tooltip" title="typcn typcn-folder-open"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-folder" data-toggle="tooltip" title="typcn typcn-folder"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-gift" data-toggle="tooltip" title="typcn typcn-gift"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-globe-outline" data-toggle="tooltip" title="typcn typcn-globe-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-globe" data-toggle="tooltip" title="typcn typcn-globe"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-group-outline" data-toggle="tooltip" title="typcn typcn-group-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-group" data-toggle="tooltip" title="typcn typcn-group"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-headphones" data-toggle="tooltip" title="typcn typcn-headphones"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-heart-full-outline" data-toggle="tooltip" title="typcn typcn-heart-full-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-heart-half-outline" data-toggle="tooltip" title="typcn typcn-heart-half-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-heart-outline" data-toggle="tooltip" title="typcn typcn-heart-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-heart" data-toggle="tooltip" title="typcn typcn-heart"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-home-outline" data-toggle="tooltip" title="typcn typcn-home-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-home" data-toggle="tooltip" title="typcn typcn-home"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-html5" data-toggle="tooltip" title="typcn typcn-html5"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-image-outline" data-toggle="tooltip" title="typcn typcn-image-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-image" data-toggle="tooltip" title="typcn typcn-image"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-infinity-outline" data-toggle="tooltip" title="typcn typcn-infinity-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-info-large-outline" data-toggle="tooltip" title="typcn typcn-info-large-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-info-large" data-toggle="tooltip" title="typcn typcn-info-large"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-info-outline" data-toggle="tooltip" title="typcn typcn-info-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-info" data-toggle="tooltip" title="typcn typcn-info"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-input-checked-outline" data-toggle="tooltip" title="typcn typcn-input-checked-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-input-checked" data-toggle="tooltip" title="typcn typcn-input-checked"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-key-outline" data-toggle="tooltip" title="typcn typcn-key-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-key" data-toggle="tooltip" title="typcn typcn-key"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-keyboard" data-toggle="tooltip" title="typcn typcn-keyboard"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-leaf" data-toggle="tooltip" title="typcn typcn-leaf"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-lightbulb" data-toggle="tooltip" title="typcn typcn-lightbulb"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-link-outline" data-toggle="tooltip" title="typcn typcn-link-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-link" data-toggle="tooltip" title="typcn typcn-link"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-location-arrow-outline" data-toggle="tooltip" title="typcn typcn-location-arrow-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-location-arrow" data-toggle="tooltip" title="typcn typcn-location-arrow"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-location-outline" data-toggle="tooltip" title="typcn typcn-location-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-location" data-toggle="tooltip" title="typcn typcn-location"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-lock-closed-outline" data-toggle="tooltip" title="typcn typcn-lock-closed-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-lock-closed" data-toggle="tooltip" title="typcn typcn-lock-closed"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-lock-open-outline" data-toggle="tooltip" title="typcn typcn-lock-open-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-lock-open" data-toggle="tooltip" title="typcn typcn-lock-open"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-mail" data-toggle="tooltip" title="typcn typcn-mail"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-map" data-toggle="tooltip" title="typcn typcn-map"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-eject-outline" data-toggle="tooltip" title="typcn typcn-media-eject-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-eject" data-toggle="tooltip" title="typcn typcn-media-eject"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-fast-forward-outline" data-toggle="tooltip" title="typcn typcn-media-fast-forward-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-fast-forward" data-toggle="tooltip" title="typcn typcn-media-fast-forward"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-pause-outline" data-toggle="tooltip" title="typcn typcn-media-pause-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-pause" data-toggle="tooltip" title="typcn typcn-media-pause"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-play-outline" data-toggle="tooltip" title="typcn typcn-media-play-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-play-reverse-outline" data-toggle="tooltip" title="typcn typcn-media-play-reverse-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-play-reverse" data-toggle="tooltip" title="typcn typcn-media-play-reverse"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-play" data-toggle="tooltip" title="typcn typcn-media-play"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-record-outline" data-toggle="tooltip" title="typcn typcn-media-record-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-record" data-toggle="tooltip" title="typcn typcn-media-record"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-rewind-outline" data-toggle="tooltip" title="typcn typcn-media-rewind-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-rewind" data-toggle="tooltip" title="typcn typcn-media-rewind"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-stop-outline" data-toggle="tooltip" title="typcn typcn-media-stop-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-media-stop" data-toggle="tooltip" title="typcn typcn-media-stop"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-message-typing" data-toggle="tooltip" title="typcn typcn-message-typing"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-message" data-toggle="tooltip" title="typcn typcn-message"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-messages" data-toggle="tooltip" title="typcn typcn-messages"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-microphone-outline" data-toggle="tooltip" title="typcn typcn-microphone-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-microphone" data-toggle="tooltip" title="typcn typcn-microphone"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-minus-outline" data-toggle="tooltip" title="typcn typcn-minus-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-minus" data-toggle="tooltip" title="typcn typcn-minus"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-mortar-board" data-toggle="tooltip" title="typcn typcn-mortar-board"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-news" data-toggle="tooltip" title="typcn typcn-news"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-notes-outline" data-toggle="tooltip" title="typcn typcn-notes-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-notes" data-toggle="tooltip" title="typcn typcn-notes"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-pen" data-toggle="tooltip" title="typcn typcn-pen"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-pencil" data-toggle="tooltip" title="typcn typcn-pencil"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-phone-outline" data-toggle="tooltip" title="typcn typcn-phone-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-phone" data-toggle="tooltip" title="typcn typcn-phone"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-pi-outline" data-toggle="tooltip" title="typcn typcn-pi-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-pi" data-toggle="tooltip" title="typcn typcn-pi"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-pin-outline" data-toggle="tooltip" title="typcn typcn-pin-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-pin" data-toggle="tooltip" title="typcn typcn-pin"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-pipette" data-toggle="tooltip" title="typcn typcn-pipette"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-plane-outline" data-toggle="tooltip" title="typcn typcn-plane-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-plane" data-toggle="tooltip" title="typcn typcn-plane"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-plug" data-toggle="tooltip" title="typcn typcn-plug"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-plus-outline" data-toggle="tooltip" title="typcn typcn-plus-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-plus" data-toggle="tooltip" title="typcn typcn-plus"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-point-of-interest-outline" data-toggle="tooltip" title="typcn typcn-point-of-interest-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-point-of-interest" data-toggle="tooltip" title="typcn typcn-point-of-interest"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-power-outline" data-toggle="tooltip" title="typcn typcn-power-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-power" data-toggle="tooltip" title="typcn typcn-power"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-printer" data-toggle="tooltip" title="typcn typcn-printer"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-puzzle-outline" data-toggle="tooltip" title="typcn typcn-puzzle-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-puzzle" data-toggle="tooltip" title="typcn typcn-puzzle"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-radar-outline" data-toggle="tooltip" title="typcn typcn-radar-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-radar" data-toggle="tooltip" title="typcn typcn-radar"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-refresh-outline" data-toggle="tooltip" title="typcn typcn-refresh-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-refresh" data-toggle="tooltip" title="typcn typcn-refresh"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-rss-outline" data-toggle="tooltip" title="typcn typcn-rss-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-rss" data-toggle="tooltip" title="typcn typcn-rss"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-scissors-outline" data-toggle="tooltip" title="typcn typcn-scissors-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-scissors" data-toggle="tooltip" title="typcn typcn-scissors"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-shopping-bag" data-toggle="tooltip" title="typcn typcn-shopping-bag"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-shopping-cart" data-toggle="tooltip" title="typcn typcn-shopping-cart"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-at-circular" data-toggle="tooltip" title="typcn typcn-social-at-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-dribbble-circular" data-toggle="tooltip" title="typcn typcn-social-dribbble-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-dribbble" data-toggle="tooltip" title="typcn typcn-social-dribbble"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-facebook-circular" data-toggle="tooltip" title="typcn typcn-social-facebook-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-facebook" data-toggle="tooltip" title="typcn typcn-social-facebook"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-flickr-circular" data-toggle="tooltip" title="typcn typcn-social-flickr-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-flickr" data-toggle="tooltip" title="typcn typcn-social-flickr"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-github-circular" data-toggle="tooltip" title="typcn typcn-social-github-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-github" data-toggle="tooltip" title="typcn typcn-social-github"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-google-plus-circular" data-toggle="tooltip" title="typcn typcn-social-google-plus-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-google-plus" data-toggle="tooltip" title="typcn typcn-social-google-plus"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-instagram-circular" data-toggle="tooltip" title="typcn typcn-social-instagram-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-instagram" data-toggle="tooltip" title="typcn typcn-social-instagram"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-last-fm-circular" data-toggle="tooltip" title="typcn typcn-social-last-fm-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-last-fm" data-toggle="tooltip" title="typcn typcn-social-last-fm"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-linkedin-circular" data-toggle="tooltip" title="typcn typcn-social-linkedin-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-linkedin" data-toggle="tooltip" title="typcn typcn-social-linkedin"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-pinterest-circular" data-toggle="tooltip" title="typcn typcn-social-pinterest-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-pinterest" data-toggle="tooltip" title="typcn typcn-social-pinterest"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-skype-outline" data-toggle="tooltip" title="typcn typcn-social-skype-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-skype" data-toggle="tooltip" title="typcn typcn-social-skype"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-tumbler-circular" data-toggle="tooltip" title="typcn typcn-social-tumbler-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-tumbler" data-toggle="tooltip" title="typcn typcn-social-tumbler"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-twitter-circular" data-toggle="tooltip" title="typcn typcn-social-twitter-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-twitter" data-toggle="tooltip" title="typcn typcn-social-twitter"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-vimeo-circular" data-toggle="tooltip" title="typcn typcn-social-vimeo-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-vimeo" data-toggle="tooltip" title="typcn typcn-social-vimeo"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-youtube-circular" data-toggle="tooltip" title="typcn typcn-social-youtube-circular"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-social-youtube" data-toggle="tooltip" title="typcn typcn-social-youtube"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-sort-alphabetically-outline" data-toggle="tooltip" title="typcn typcn-sort-alphabetically-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-sort-alphabetically" data-toggle="tooltip" title="typcn typcn-sort-alphabetically"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-sort-numerically-outline" data-toggle="tooltip" title="typcn typcn-sort-numerically-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-sort-numerically" data-toggle="tooltip" title="typcn typcn-sort-numerically"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-spanner-outline" data-toggle="tooltip" title="typcn typcn-spanner-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-spanner" data-toggle="tooltip" title="typcn typcn-spanner"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-spiral" data-toggle="tooltip" title="typcn typcn-spiral"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-star-full-outline" data-toggle="tooltip" title="typcn typcn-star-full-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-star-half-outline" data-toggle="tooltip" title="typcn typcn-star-half-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-star-half" data-toggle="tooltip" title="typcn typcn-star-half"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-star-outline" data-toggle="tooltip" title="typcn typcn-star-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-star" data-toggle="tooltip" title="typcn typcn-star"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-starburst-outline" data-toggle="tooltip" title="typcn typcn-starburst-outline"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-starburst" data-toggle="tooltip" title="typcn typcn-starburst"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-stopwatch" data-toggle="tooltip" title="typcn typcn-stopwatch"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-support" data-toggle="tooltip" title="typcn typcn-support"></i></li>
+														<li class="icons-list-item"><i class="typcn typcn-tabs-outline" data-toggle="tooltip" title="typcn typcn-tabs-outline"></i></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--App-Content-->
+			</div>
+
+			<!--Footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-lg-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2019 <a href="#">Autolist</a>. Designed by <a href="#">Spruko</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--Footer-->
+
+		</div>
+		<!--/Page-->
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top" ><i class="fa fa-rocket"></i></a>
+
+		<!-- JQuery js-->
+		<script src="../assets/js/jquery-3.2.1.min.js"></script>
+
+		<!-- Bootstrap js -->
+		<script src="../assets/plugins/bootstrap-4.3.1/js/popper.min.js"></script>
+		<script src="../assets/plugins/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+		<!--JQueryVehiclerkline Js-->
+		<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+		<!-- Circle Progress Js-->
+		<script src="../assets/js/circle-progress.min.js"></script>
+
+		<!-- Star Rating Js-->
+		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+		<!-- Fullside-menu Js-->
+		<script src="../assets/plugins/sidemenu/sidemenu.js"></script>
+
+		<!-- Custom scroll bar Js-->
+		<script src="../assets/plugins/scroll-bar/jquery.mCustomScrollbar.js"></script>
+
+		<!--Counters -->
+		<script src="../assets/plugins/counters/counterup.min.js"></script>
+		<script src="../assets/plugins/counters/waypoints.min.js"></script>
+
+		<!-- Custom Js-->
+		<script src="../assets/js/admin-custom.js"></script>
+
+	</body>
+</html>
